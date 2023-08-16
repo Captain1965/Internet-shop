@@ -59,11 +59,13 @@ function browserSync() {
 }
 
 function html() {
-  return src(path.src.html)
-    .pipe(fileinclude())
-    // .pipe(webphtml())
-    .pipe(dest(path.build.html))
-    .pipe(browsersync.stream());
+  return (
+    src(path.src.html)
+      .pipe(fileinclude())
+      // .pipe(webphtml())
+      .pipe(dest(path.build.html))
+      .pipe(browsersync.stream())
+  );
 }
 
 function css() {
@@ -87,7 +89,11 @@ function css() {
 }
 
 function js() {
-  return src(path.src.js)
+  return src([
+    // './node_modules/jquery/dist/jquery.js',
+    // './node_modules/slick-carousel/slick/slick.js',
+    path.src.js
+  ])
     .pipe(fileinclude())
     .pipe(dest(path.build.js))
     .pipe(uglify())
