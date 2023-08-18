@@ -411,7 +411,7 @@ footer {
 
 .footer-bottom__img {
   display: inline;
-  margin-left: 25px;
+  margin: 25px;
   vertical-align: middle;
 }
 
@@ -452,6 +452,10 @@ footer {
 
 .top-slider__link {
   padding: 14px 36px;
+}
+
+.top-slider__foto-2 {
+  padding-right: 160px;
 }
 
 .top-slider .slick-dots {

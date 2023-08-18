@@ -149,7 +149,7 @@ footer {
 
   &__img {
     display: inline;
-    margin-left: 25px;
+    margin: 25px;
     vertical-align: middle;
   }
 }
@@ -186,6 +186,10 @@ footer {
     @extend %btn;
     padding: 14px 36px;
   }
+  &__foto-2{
+    padding-right: 160px;
+  }
+
   .slick-dots {
     display: flex;
     justify-content: center;
