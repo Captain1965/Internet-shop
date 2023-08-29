@@ -1,3 +1,5 @@
+@import '../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css';
+
 a,
 body {
   font-family: "Quiksand-Medium", sans-serif;
@@ -7,6 +9,7 @@ body {
 .footer-top__title,
 .categories-info .info__item-title,
 .menu__list-link,
+.video-fashion__link,
 .top-slider__link,
 .footer-top__form-btn {
   font-family: "Roboto-Regular", sans-serif;
@@ -21,6 +24,7 @@ body {
   font-weight: 700;
 }
 
+.video-fashion__link,
 .top-slider__link,
 .footer-top__form-btn {
   padding: 12px 26px;
@@ -634,4 +638,51 @@ footer {
 
 .top-slider .slick-dots li.slick-active button::before {
   background-color: #fe3e57;
+}
+
+.video-fashion {
+  background-color: #f6f6f6;
+  background-image: url("../img/decor/pattern_2213.svg");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 125px 0;
+}
+
+.video-fashion__inner {
+  display: flex;
+  flex-direction: row;
+}
+
+.video-fashion__popup {
+  display: flex;
+  margin-right: 60px;
+  max-width: 530px;
+  height: 480px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.video-fashion__content {
+  max-width: 570px;
+}
+
+.video-fashion__subtitle {
+  padding-top: 75px;
+  font-size: 22px;
+  color: #fe3e57;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.video-fashion__title {
+  text-align: left;
+}
+
+.video-fashion__text {
+  margin-bottom: 55px;
 }

@@ -31,5 +31,10 @@
     "sas": "^3.0.4",
     "sass": "^1.65.1",
     "slick-carousel": "^1.8.1"
+  },
+  "dependencies": {
+    "-": "^0.0.1",
+    "@fancyapps/fancybox": "^3.5.7",
+    "D": "^1.0.0"
   }
 }
