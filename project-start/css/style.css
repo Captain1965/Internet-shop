@@ -1,5 +1,10 @@
 @import '../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css';
 
+.promo__text {
+  font-family: "Quiksand-Regular", sans-serif;
+  font-weight: 400;
+}
+
 a,
 body {
   font-family: "Quiksand-Medium", sans-serif;
@@ -18,6 +23,7 @@ body {
   font-weight: 400;
 }
 
+.promo__clock-item span,
 .top-slider__title,
 .menu__list-link--active,
 .menu__list-link:hover,
@@ -471,7 +477,7 @@ a {
 }
 
 .categories-info .categories__item:nth-child(4) .categories__item-subtitle,
-.categories-info .categories__item:nth-child(4) .categories__item-link:hover {
+.categories-info .categories__item:nth-child(4) .categories__i tem-link:hover {
   color: #34c3ff;
 }
 
@@ -854,4 +860,76 @@ footer {
 
 .star {
   margin: 20px auto 0;
+}
+
+.promo {
+  background-image: url("../img/promo-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 150px 0 160px;
+  text-align: center;
+}
+
+.promo__inner {
+  max-width: 570px;
+  width: 100%;
+  margin-left: auto;
+}
+
+.promo__subtitle {
+  text-transform: uppercase;
+  color: #fe3e57;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.promo__clock {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 55px;
+}
+
+.promo__clock-item {
+  background-color: #fff;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.promo__clock-item span {
+  font-size: 48px;
+  line-height: 26px;
+  color: #29282d;
+  margin-bottom: 7px;
+  margin-top: 10px;
+}
+
+.promo__text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #8d8d8d;
+}
+
+.promo__link {
+  text-transform: uppercase;
+  color: #29282d;
+  display: inline-block;
+  border: 1px solid #fe3e57;
+  padding: 14px 27px;
+  margin-top: 55px;
+}
+
+.partners {
+  padding-top: 75px;
+}
+
+.partners__list {
+  height: 170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
