@@ -498,7 +498,6 @@ footer {
 .star {
   margin: 20px auto 0;
 }
-
 .promo {
   background-image: url("../img/promo-bg.jpg");
   background-repeat: no-repeat;
@@ -523,10 +522,12 @@ footer {
     margin-bottom: 55px;
   }
   &__clock-item {
-    background-color: #fff;
+    // background-color: #fff;
     width: 120px;
     height: 120px;
     border-radius: 50%;
+    box-shadow: 0px 10px 40px 0px;
+    background-color: rgba(187, 187, 187, 0.3);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -556,7 +557,6 @@ footer {
     margin-top: 55px;
   }
 }
-
 .partners {
   padding-top: 75px;
   &__list {
@@ -567,4 +567,101 @@ footer {
   }
 }
 
-@import "_media";
+.blog {
+  padding: 50px 0 160px;
+  background-image: url("../img/blog/blog-bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      height: 53px;
+      top: -28px;
+      right: -55px;
+      z-index: -1;
+      width: 130px;
+      height: 55px;
+      background-image: url("../img/decor/blog-decor.svg");
+    }
+  }
+  &__item {
+    max-width: 370px;
+    border: 1px solid #ececec;
+    &:hover {
+      box-shadow: 20px 0px 60px 0px rgba(202, 202, 202, 0.34);
+      border: none;
+      .blog__item-link {
+        color: $accent;
+      }
+
+      .blog__item-link::after {
+        content: "";
+        width: 10px;
+        height: 8px;
+        background-image: url("../img/icons/arrow-accent.png");
+        position: absolute;
+        top: 8px;
+        right: 190px;
+      }
+    }
+  }
+  &__item-box {
+    padding: 30px 40px;
+  }
+  &__item-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  &__item-author,
+  &__item-date {
+    padding-left: 30px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      left: 0;
+      top: 4px;
+    }
+  }
+  &__item-author::before {
+    background-image: url("../img/icons/user-blog.svg");
+  }
+  &__item-date::before {
+    background-image: url("../img/icons/time.png");
+  }
+  &__item-imglink {
+    display: block;
+    img {
+      height: 288px;
+      object-fit: cover;
+    }
+  }
+  &__item-title {
+    color: $title;
+    @extend %roboto-400;
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  &__item-link {
+    display: block;
+    position: relative;
+  }
+  &__item-link::after {
+    content: "";
+    width: 10px;
+    height: 8px;
+    background-image: url("../img/icons/arrow.png");
+    position: absolute;
+    top: 8px;
+    right: 190px;
+  }
+}
+
+// @import "_media";

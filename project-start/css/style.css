@@ -11,6 +11,7 @@ body {
   font-weight: 500;
 }
 
+.blog__item-title,
 .product-item__price,
 .footer-top__title,
 .categories-info .info__item-title,
@@ -891,10 +892,11 @@ footer {
 }
 
 .promo__clock-item {
-  background-color: #fff;
   width: 120px;
   height: 120px;
   border-radius: 50%;
+  box-shadow: 0px 10px 40px 0px;
+  background-color: rgba(187, 187, 187, 0.3);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -932,4 +934,118 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.blog {
+  padding: 50px 0 160px;
+  background-image: url("../img/blog/blog-bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.blog__items {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.blog__items::after {
+  content: "";
+  position: absolute;
+  height: 53px;
+  top: -28px;
+  right: -55px;
+  z-index: -1;
+  width: 130px;
+  height: 55px;
+  background-image: url("../img/decor/blog-decor.svg");
+}
+
+.blog__item {
+  max-width: 370px;
+  border: 1px solid #ececec;
+}
+
+.blog__item:hover {
+  box-shadow: 20px 0px 60px 0px rgba(202, 202, 202, 0.34);
+  border: none;
+}
+
+.blog__item:hover .blog__item-link {
+  color: #fe3e57;
+}
+
+.blog__item:hover .blog__item-link::after {
+  content: "";
+  width: 10px;
+  height: 8px;
+  background-image: url("../img/icons/arrow-accent.png");
+  position: absolute;
+  top: 8px;
+  right: 190px;
+}
+
+.blog__item-box {
+  padding: 30px 40px;
+}
+
+.blog__item-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.blog__item-author,
+.blog__item-date {
+  padding-left: 30px;
+  position: relative;
+}
+
+.blog__item-author::before,
+.blog__item-date::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  top: 4px;
+}
+
+.blog__item-author::before {
+  background-image: url("../img/icons/user-blog.svg");
+}
+
+.blog__item-date::before {
+  background-image: url("../img/icons/time.png");
+}
+
+.blog__item-imglink {
+  display: block;
+}
+
+.blog__item-imglink img {
+  height: 288px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blog__item-title {
+  color: #29282d;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.blog__item-link {
+  display: block;
+  position: relative;
+}
+
+.blog__item-link::after {
+  content: "";
+  width: 10px;
+  height: 8px;
+  background-image: url("../img/icons/arrow.png");
+  position: absolute;
+  top: 8px;
+  right: 190px;
 }
