@@ -45,3 +45,46 @@ a {
   max-width: 570px;
   margin: 0 auto 55px;
 }
+.breadcrumbs {
+  display: inline-flex;
+  justify-content: center;
+  padding-left: 25px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 19px;
+    background-image: url("../img/icons/home.svg");
+    top: 2px;
+    left: 0;
+  }
+  &__list {
+    display: flex;
+  }
+  &__item {
+    color: #727272;
+    padding-right: 40px;
+    position: relative;
+    &::after {
+      display: block;
+      content: "";
+      position: relative;
+      width: 11px;
+      height: 12px;
+      top: -18px;
+      right: -52px;
+      background-image: url("../img/icons/angle.svg");
+    }
+    &:last-child {
+      color: $accent;
+      padding-right: 0;
+      &::after{
+        display: none;
+      }
+    }
+  }
+  &__link {
+    color: inherit;
+  }
+}
