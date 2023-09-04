@@ -1146,7 +1146,7 @@ footer {
   border: none;
   background-color: #f6f6f6;
   margin-top: 4px;
-  padding: 0 15PX;
+  padding: 0 15px;
   height: 60px;
 }
 
@@ -1166,4 +1166,8 @@ footer {
   margin-top: 12px;
   color: #fe3e57;
   display: block;
+}
+
+.modal__text {
+  margin-bottom: 25px;
 }
