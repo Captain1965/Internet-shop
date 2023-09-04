@@ -727,5 +727,38 @@ footer {
     margin-bottom: 25px;
   }
 }
-
+.page-404 {
+  padding: 110px 0 120px;
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__content {
+    max-width: 570px;
+    width: 100%;
+  }
+  &__title {
+    color: #28384f;
+    @extend %roboto-700;
+    margin-bottom: 40px;
+    font-size: 48px;
+  }
+  &__text {
+    max-width: 470px;
+    margin-bottom: 55px;
+  }
+  &__link {
+    color: #fff;
+    background-color: $accent;
+    text-transform: uppercase;
+    padding: 14px 35px;
+    @extend %roboto-400;
+    box-shadow: 0px 5px 25px 0px rgba(254, 62, 87, 0.34);
+  }
+  &__img{    
+    width: 400px;
+    height: 400px;
+  }
+}
 // @import "_media";
