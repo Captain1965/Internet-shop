@@ -1,9 +1,39 @@
 @@include('../../node_modules/jquery/dist/jquery.js');
 @@include('../../node_modules/slick-carousel/slick/slick.js');
 @@include('../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js');
-@@include('../../node_modules/rateyo/src/jquery.rateyo.js')
+@@include('../../node_modules/rateyo/src/jquery.rateyo.js');
+@@include('../../node_modules/ion-rangeslider/js/ion.rangeSlider.js');
+@@include('../../node_modules/jquery-form-styler/dist/jquery.formstyler.js');
+
 
 $(function(){
+  $('.shop-content__filter-btn').on('click', function(){
+    $('.shop-content__filter-btn').removeClass('shop-content__filter-btn--active');    
+    $(this).addClass('shop-content__filter-btn--active');
+  });
+  $('.button-list').on('click', function(){
+    $('.product-item').addClass('product-item--list');
+  })
+$('.button-grid').on('click', function(){
+    $('.product-item').removeClass('product-item--list');
+  })
+
+
+  $('.select-style').styler();
+
+$('.filter-price__input').ionRangeSlider({
+  type: "double",
+  prefix: "$", 
+  onStart: function (data){
+    $('.filter-prise__from').text(data.from);
+    $('.filter-prise__to').text(data.to);
+  },
+  onChange: function (data) {
+    $('.filter-prise__from').text(data.from);
+    $('.filter-prise__to').text(data.to);
+  },
+});
+
 $('.top-slider__inner').slick({
   arrows: false,
   dots: true,
@@ -63,4 +93,5 @@ const deadline = $('.promo__clock').attr('data-time');
  //new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
 initializeClock('promo__clock', deadline);
 
+$('.select-style').styler();
 })
