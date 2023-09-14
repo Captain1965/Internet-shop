@@ -7,19 +7,34 @@
 
 
 $(function(){
+  $('.product-slide__thumb').slick({
+    asNavFor: '.product-slide__big',
+    focusOnSelect: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    vertical: true,
+    draggable: false
+  });
+  $('.product-slide__big').slick({
+    arrows: false,
+    asNavFor: '.product-slide__thumb',
+    draggable: false,
+    fade: true
+  });
+
   $('.shop-content__filter-btn').on('click', function(){
     $('.shop-content__filter-btn').removeClass('shop-content__filter-btn--active');    
     $(this).addClass('shop-content__filter-btn--active');
   });
   $('.button-list').on('click', function(){
     $('.product-item').addClass('product-item--list');
-  })
+  });
 $('.button-grid').on('click', function(){
     $('.product-item').removeClass('product-item--list');
-  })
+  });
 
 
-  $('.select-style').styler();
+  $('.select-style, .product-one__num').styler();
 
 $('.filter-price__input').ionRangeSlider({
   type: "double",
