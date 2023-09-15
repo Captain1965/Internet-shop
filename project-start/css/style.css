@@ -14,6 +14,9 @@ body {
   font-weight: 500;
 }
 
+.comments-form__title,
+.comments__content-name,
+.product-tubs__top,
 .product-filter__color-title,
 .product-filter__size-title,
 .product-one__item-text span,
@@ -26,6 +29,7 @@ body {
 .footer-top__title,
 .categories-info .info__item-title,
 .menu__list-link,
+.comments-form__btn,
 .product-one__btn,
 .filter-price__btn,
 .product-item--sale .product-item__img-box::before,
@@ -46,6 +50,7 @@ body {
   font-weight: 700;
 }
 
+.comments-form__btn,
 .product-one__btn,
 .filter-price__btn,
 .product-item--sale .product-item__img-box::before,
@@ -57,6 +62,7 @@ body {
   color: #fff;
   background-color: #fe3e57;
   box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
+  cursor: pointer;
 }
 
 .product-filter__color-input,
@@ -64,6 +70,7 @@ body {
 .filter-category__input,
 .filter-size__input,
 .filter-color__input,
+.comments-form__input,
 .product-filter__size-input {
   width: 1px;
   height: 1px;
@@ -3440,8 +3447,7 @@ footer {
 }
 
 .product-page {
-  padding: 120px 0 60px;
-  border-bottom: 1px solid #f0f0f0;
+  padding: 120px 0 0;
 }
 
 .product-one__inner {
@@ -3687,6 +3693,201 @@ footer {
   border: 1px solid #ccccce;
   display: inline-block;
   cursor: pointer;
+}
+
+.product-tubs {
+  padding-top: 110px;
+}
+
+.product-tubs__top {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 22px;
+}
+
+.product-tubs__top-item {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.product-tubs__top-item + .product-tubs__top-item {
+  margin-left: 55px;
+}
+
+.product-tubs__top-item--active {
+  color: #29282d;
+  position: relative;
+}
+
+.product-tubs__top-item--active::before {
+  content: "";
+  position: absolute;
+  bottom: -11px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #fe3e57;
+}
+
+.product-tubs__content-item {
+  display: none;
+}
+
+.product-tubs__content-item.product-tubs__content-item--active {
+  display: block;
+}
+
+.comments {
+  margin-bottom: 40px;
+  display: flex;
+}
+
+.comments__img {
+  margin-right: 30px;
+  min-width: 71px;
+  height: 71px;
+  border-radius: 50%;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.comments__content-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.comments__content-name {
+  color: #29282d;
+  margin-right: 13px;
+}
+
+.comments__content-date {
+  padding-left: 13px;
+  border-left: 1px solid #8d8d8d;
+}
+
+.comments__content-star {
+  margin-right: 0;
+}
+
+.comments__content-text {
+  margin-bottom: 10px;
+}
+
+.comments__content-reply {
+  display: inline-block;
+  padding-left: 25px;
+  position: relative;
+}
+
+.comments__content-reply::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 13px;
+  left: 0;
+  top: 7px;
+  background-image: url(../img/icons/reply.png);
+}
+
+.comments-form {
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 60px;
+}
+
+.comments-form__title {
+  font-size: 22px;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.comments-form__title::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background-color: #fe3e57;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+}
+
+.comments-form__rating {
+  margin-bottom: 30px;
+}
+
+.comments-form__rating-title {
+  color: #29282d;
+  margin-right: 60px;
+}
+
+.comments-form__label {
+  margin-right: 25px;
+}
+
+.comments-form__input:checked + .comments-form__radio path {
+  fill: #ffc35b;
+}
+
+.comments-form__radio {
+  cursor: pointer;
+}
+
+.comments-form__radio path {
+  fill: #8d8d8d;
+}
+
+.comments-form__box-input {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.comments-form__text-input {
+  width: 570px;
+  display: inline-block;
+  height: 50px;
+  padding: 0 20px;
+  border: 1px solid #f0f0f0;
+}
+
+.comments-form__textarea {
+  border: 1px solid #f0f0f0;
+  padding: 15px 20px;
+  display: block;
+  width: 100%;
+  height: 225px;
+  resize: none;
+  margin-bottom: 40px;
+}
+
+.comments-form__btn {
+  border: none;
+}
+
+.related {
+  padding: 50px 0 120px;
+}
+
+.related__title {
+  margin-bottom: 50px;
+}
+
+.related__items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 30px;
+}
+
+.related__items .product-item__img-box {
+  height: auto;
+}
+
+.related__items .product-item__title {
+  padding: 5px 0;
 }
 
 @media all and (max-width: 576px) {

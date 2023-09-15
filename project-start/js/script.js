@@ -24045,6 +24045,15 @@ return jQuery;
 
 
 $(function(){
+  $('.product-tubs__top-item').on('click', function(e){
+    e.preventDefault();
+    $('.product-tubs__top-item').removeClass('product-tubs__top-item--active');
+    $(this).addClass('product-tubs__top-item--active');
+
+    $('.product-tubs__content-item').removeClass('product-tubs__content-item--active');
+    $($(this).attr('href')).addClass('product-tubs__content-item--active');
+
+  })
   $('.product-slide__thumb').slick({
     asNavFor: '.product-slide__big',
     focusOnSelect: true,
