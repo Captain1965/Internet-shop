@@ -712,13 +712,19 @@ footer {
   &__item-box {
     padding: 30px 40px;
   }
-  &__item-imglink {
-    display: block;
-    img {
-      height: 288px;
-      object-fit: cover;
-    }
+  &__link-bg {
+    width: 770px;
+    height: 480px;
+    background-image: url("../img/blog/big-2.jpg");
   }
+
+  // &__item-imglink {
+  //   display: block;
+  //   img {
+  //     height: 288px;
+  //     object-fit: cover;
+  //   }
+  // }
   &__item-title {
     color: $title;
     @extend %roboto-400;
@@ -1633,6 +1639,13 @@ footer {
       margin-right: 30px;
     }
   }
+  &__link-bg {
+    width: 770px;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .person {
   border: 1px solid #ececec;
@@ -1685,10 +1698,10 @@ footer {
     color: $title;
   }
   &__item {
-    display: flex;    
+    display: flex;
     padding: 22px 0 22px;
     border-bottom: 1px solid #ececec;
-    &:last-child{
+    &:last-child {
       border: none;
     }
   }
@@ -1712,16 +1725,16 @@ footer {
     display: block;
     object-fit: cover;
   }
-  &__date{
+  &__date {
     position: relative;
     padding-left: 26px;
-    
-    &::before{
+
+    &::before {
       content: "";
       position: absolute;
       top: 3px;
       left: 0;
-      background-image: url('../img/icons/date.svg'); 
+      background-image: url("../img/icons/date.svg");
       width: 16px;
       height: 16px;
     }

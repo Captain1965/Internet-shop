@@ -2978,14 +2978,10 @@ footer {
   padding: 30px 40px;
 }
 
-.blog__item-imglink {
-  display: block;
-}
-
-.blog__item-imglink img {
-  height: 288px;
-  -o-object-fit: cover;
-     object-fit: cover;
+.blog__link-bg {
+  width: 770px;
+  height: 480px;
+  background-image: url("../img/blog/big-2.jpg");
 }
 
 .blog__item-title {
@@ -4001,6 +3997,14 @@ footer {
 
 .blog-page .blog-box__author {
   margin-right: 30px;
+}
+
+.blog-page__link-bg {
+  width: 770px;
+  height: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .person {
