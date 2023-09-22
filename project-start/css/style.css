@@ -32,6 +32,7 @@ body {
 .footer-top__title,
 .categories-info .info__item-title,
 .menu__list-link,
+.contact__form-btn,
 .comments-form__btn,
 .product-one__btn,
 .filter-price__btn,
@@ -43,6 +44,8 @@ body {
   font-weight: 400;
 }
 
+.contact__form-title,
+.contact__info-title,
 .comments-title,
 .blog-one__author-name,
 .blog-one__tags span,
@@ -61,6 +64,7 @@ body {
   font-weight: 700;
 }
 
+.contact__form-btn,
 .comments-form__btn,
 .product-one__btn,
 .filter-price__btn,
@@ -4237,6 +4241,126 @@ footer {
   margin-bottom: 25px;
   color: #29282d;
   font-size: 24px;
+}
+
+.map {
+  padding: 120px 0;
+}
+
+#map {
+  widows: 100%;
+  height: 450px;
+}
+
+.contact {
+  padding-bottom: 120px;
+}
+
+.contact__inner {
+  display: flex;
+}
+
+.contact__info {
+  max-width: 370px;
+  margin-right: 30px;
+}
+
+.contact__info-title {
+  color: #29282d;
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 20px;
+}
+
+.contact__info-text {
+  margin-bottom: 60px;
+}
+
+.contact__info-item {
+  margin-top: 55px;
+  color: #29282d;
+  padding-left: 80px;
+  position: relative;
+}
+
+.contact__info-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -3px;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0px 5px 20px 0px rgba(146, 146, 146, 0.3);
+}
+
+.contact__info-phone {
+  display: block;
+  color: #29282d;
+}
+
+.contact__info-item::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 18px;
+  left: 20px;
+  background-image: url("../img/icons/map-point.svg");
+}
+
+.contact__info-item:last-child::after {
+  background-image: url("../img/icons/mail.svg");
+}
+
+.contact__info-item:first-child::after {
+  background-image: url("../img/icons/phone.svg");
+}
+
+.contact__form {
+  width: 100%;
+  padding: 60px 40px;
+  box-shadow: 0px 5px 20px 0px rgba(146, 146, 146, 0.3);
+}
+
+.contact__form-title {
+  color: #29282d;
+  margin-bottom: 20px;
+  font-size: 22px;
+  line-height: 58px;
+}
+
+.contact__form-input {
+  width: 100%;
+  height: 60px;
+  display: block;
+  background-color: #f6f6f6;
+  border: none;
+  padding: 0 24px;
+  margin-bottom: 30px;
+}
+
+.contact__form-textarea {
+  width: 100%;
+  display: block;
+  resize: none;
+  height: 200px;
+  background-color: #f6f6f6;
+  border: none;
+  padding: 24px;
+  margin-bottom: 30px;
+}
+
+.contact__form-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__form-box input {
+  width: 330px;
+}
+
+.contact__form-btn {
+  border: none;
 }
 
 @media all and (max-width: 576px) {
