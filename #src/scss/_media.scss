@@ -1,7 +1,7 @@
-@media (max-width: 1200px) {
+@media (max-width: 1250px) {
   .header {
     &__inner {
-      padding-right: 10px;
+      padding-right: 25px;
     }
   }
 }
@@ -149,63 +149,90 @@
       margin-left: 15px;
     }
   }
-  @media (max-width: 420px) {
-    .footer-top {
-      &__list--active {
-        display: none;
+}
+@media (max-width: 420px) {
+  .footer-top {
+    &__list--active {
+      display: none;
+    }
+    &__title-span {
+      position: relative;
+      &::after {
+        content: "";
+        width: 14px;
+        height: 8px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-image: url("../img/icons/angle-down.svg");
       }
-      &__title-span {
-        position: relative;
-        &::after {
-          content: "";
-          width: 14px;
-          height: 8px;
-          position: absolute;
-          top: 10px;
-          left: 10px;
-          background-image: url("../img/icons/angle-down.svg");
-
-        }
-      }
-      &__title-span--active {
-        position: relative;
-        &::after {
-          content: "";
-          background-color: $bg;
-          width: 20px;
-          height: 20px;
-          position: absolute;
-          top: 0px;
-          left: 125px;
-          background-image: url("../img/icons/angle-down.svg");
-          transform: rotate(180deg);
-          background-repeat: no-repeat;
-          background-position: center;
-          z-index: 5;
-        }
+    }
+    &__title-span--active {
+      position: relative;
+      &::after {
+        content: "";
+        background-color: $bg;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 0px;
+        left: 125px;
+        background-image: url("../img/icons/angle-down.svg");
+        transform: rotate(180deg);
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 5;
       }
     }
   }
-  // position: relative;
-  // &::after,
-  // &::before {
-  //   content: "";
-  //   width: 14px;
-  //   height: 8px;
-  //   position: absolute;
-  //   top: 10px;
-  //   left: 5px;
-  //   background-image: url('../img/icons/angle-down.svg');
-  //   transform: rotate(var(--roll));
-  // }}
+}
+@media (max-width: 1250px) {
+  .top-slider {
+    &__img {
+      width: 40%;
+      object-fit: contain;
+    }
+    &__content {
+      padding-left: 15px;
+      padding-top: 40px;
+    }
+  }
+}
+@media (max-width: 1050px) {
+  .top-slider {
+    .top-slider__img {
+      display: none;
+    }
+    &__content {
+      padding-top: 0;
+      padding-bottom: 50px;
+    }
+  }
+  .top-slider .slick-dots {
+    margin-top: 0;
+  }
+}
 
-  //     &::after {
-  //     }
-  //     &::before {
-  //       transform: rotate(180deg);
-  //     }
-  //   }
-  // }
-  // }
-  //
+@media (max-width: 620px) {
+  .top-slider {
+    padding: 45px 0 30p;
+    &__title {
+      font-size: 44px;
+      line-height: 52px;
+      margin-bottom: 25px;
+    }
+
+  }
+}
+@media (max-width: 375px) {
+  .top-slider {
+    &__title {
+      font-size: 38px;
+      line-height: 48px;
+      margin-bottom: 20px;
+    }
+    &__text{
+      margin-bottom: 30px;
+    }
+  }
 }
