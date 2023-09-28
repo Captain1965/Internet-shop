@@ -5107,6 +5107,10 @@ footer {
   .blog__item-imglink img {
     height: 22px;
   }
+
+  .modal__link {
+    margin: 0 20px;
+  }
 }
 
 @media all and (max-height: 576px) {
