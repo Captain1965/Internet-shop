@@ -1629,6 +1629,7 @@
     &--comment::before {
       width: 20px;
       height: 20px;
+      top: -2px;
       background-image: url("../img/icons/post.svg");
     }
     &--author::before {

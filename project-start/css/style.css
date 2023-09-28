@@ -4416,6 +4416,7 @@ footer {
 .blog-one__info-link--comment::before {
   width: 20px;
   height: 20px;
+  top: -2px;
   background-image: url("../img/icons/post.svg");
 }
 
@@ -4611,6 +4612,42 @@ footer {
   .top-slider__content {
     padding-left: 15px;
     padding-top: 40px;
+  }
+
+  .blog-page__aside {
+    flex-direction: column;
+    width: 100%;
+    order: -1;
+  }
+
+  .blog-page__aside .person,
+  .blog-page__aside .latest-post,
+  .blog-page__aside .filter-category,
+  .blog-page__aside .filter-popular {
+    display: none;
+  }
+
+  .blog-page__aside .filter-search__input {
+    width: 100%;
+  }
+
+  .blog-page__inner {
+    flex-direction: column;
+  }
+
+  .blog-page__content {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .blog-page__img,
+  .blog-page__link-bg {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .blog-one__img {
+    width: 100%;
   }
 }
 
@@ -4970,6 +5007,36 @@ footer {
   .partners__item {
     margin: 10px 35px;
   }
+
+  .blog-page {
+    padding: 60px 0;
+  }
+
+  .blog-page__item-box {
+    padding: 20px;
+  }
+
+  .blog-page__img,
+  .blog-page__link-bg {
+    height: 260px;
+  }
+
+  .blog-one__left-img {
+    float: none;
+    width: 100%;
+  }
+
+  .blog-one__text {
+    padding: 20px 10px;
+  }
+
+  .comments-form__box-input {
+    flex-direction: column;
+  }
+
+  .comments-form__text-input {
+    width: 100%;
+  }
 }
 
 @media all and (max-width: 576px) {
@@ -5087,6 +5154,14 @@ footer {
     background-position: center;
     z-index: 5;
   }
+
+  .blog-one__box {
+    flex-direction: column;
+  }
+
+  .blog-one__author {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 375px) {
@@ -5123,6 +5198,35 @@ footer {
 
   .modal__link {
     margin: 0 20px;
+  }
+
+  .blog-page__item-box {
+    padding: 10px 5px;
+  }
+
+  .blog-page__slider .slick-next {
+    right: 10px;
+  }
+
+  .blog-page__slider .slick-prev {
+    left: 10px;
+  }
+
+  .blog-page__img,
+  .blog-page__link-bg {
+    height: 170px;
+  }
+
+  .filter__item {
+    padding: 25px 15px;
+  }
+
+  .blog-one__info {
+    flex-direction: column;
+  }
+
+  .blog-one__info-item {
+    margin-bottom: 10px;
   }
 }
 
