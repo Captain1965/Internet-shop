@@ -4692,6 +4692,10 @@ footer {
   .video-fashion__content {
     max-width: 100%;
   }
+
+  .product-item__img-box {
+    height: 305px;
+  }
 }
 
 @media (max-width: 860px) {
@@ -4776,6 +4780,11 @@ footer {
     width: 100%;
     margin-right: 0;
     margin-bottom: 30px;
+  }
+
+  .product__items {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
   }
 }
 
@@ -4867,6 +4876,23 @@ footer {
   .video-fashion__subtitle {
     padding-top: 40px;
     font-size: 18px;
+  }
+
+  .product {
+    padding: 60px 0;
+  }
+
+  .product__items {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+  }
+
+  .product-item {
+    max-width: 100%;
+  }
+
+  .product-item__images {
+    width: 100%;
   }
 }
 
