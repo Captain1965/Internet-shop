@@ -4679,6 +4679,19 @@ footer {
   .top-slider .slick-dots {
     margin-top: 0;
   }
+
+  .video-fashion__inner {
+    display: block;
+  }
+
+  .video-fashion__popup {
+    max-width: 100%;
+    background-position: center top;
+  }
+
+  .video-fashion__content {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 860px) {
@@ -4841,6 +4854,19 @@ footer {
 
   .categories-info {
     padding: 120px 0 60px;
+  }
+
+  .video-fashion {
+    padding: 60px 0;
+  }
+
+  .video-fashion__popup {
+    height: 270px;
+  }
+
+  .video-fashion__subtitle {
+    padding-top: 40px;
+    font-size: 18px;
   }
 }
 

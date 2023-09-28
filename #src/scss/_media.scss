@@ -292,7 +292,7 @@
 }
 @media (max-width: 768px) {
   .categories {
-    &__items{
+    &__items {
       min-height: 385px !important;
     }
     &__item {
@@ -317,15 +317,42 @@
     }
   }
 }
-@media(max-width: 620px){
+@media (max-width: 620px) {
   .categories__items.categories__items {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 10px;
   }
-  .categories__item{
+  .categories__item {
     padding: 15px 10px;
   }
-  .categories-info{
+  .categories-info {
     padding: 120px 0 60px;
   }
 }
+@media (max-width: 1050px) {
+  .video-fashion {
+    &__inner {
+      display: block;
+    }
+    &__popup {
+      max-width: 100%;
+      background-position: center top;
+    }
+    &__content {
+      max-width: 100%;
+    }
+  }
+}
+@media (max-width: 620px) {
+  .video-fashion{
+    padding: 60px 0;
+    &__popup{
+      height: 270px;
+    }
+    &__subtitle{
+      padding-top: 40px;
+      font-size: 18px;
+    }
+  }
+}
+
