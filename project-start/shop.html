@@ -9,46 +9,48 @@
 
 <body>
   <header class="header">
-    <div class="container">
-      <div class="header__inner">
-        <a class="logo" href="#">
-          <img class="logo__img" src="img/logo.svg" alt="logo">
+  <div class="container">
+    <div class="header__inner">
+      <a class="logo" href="#">
+        <img class="logo__img" src="img/logo.svg" alt="logo">
+      </a>
+      <nav class="menu">
+        <button class="menu__btn">
+          <span></span>
+        </button>
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a class="menu__list-link menu__list-link--active" href="#">HOME</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">SHOP</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">PAGE</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">BLOG</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-nav">
+        <a class="user-nav__link" href="#"><img class="user-nav__link-img" src="./img/icons/user.svg"
+            alt="user icon"></a>
+        <a class="user-nav__link" href="#"><img class="user-nav__link-img" src="./img/icons/search.svg"
+            alt="search icon"></a>
+        <a class="user-nav__link" href="#"><img class="user-nav__link-img" src="./img/icons/heart.svg" alt="heart icon">
+          <span class="user-nav__num">3</span>
         </a>
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__list-item">
-              <a class="menu__list-link menu__list-link--active" href="#">HOME</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">SHOP</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">PAGE</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">BLOG</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">CONTACT</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="user-nav">
-          <a class="user-nav__link" href="#"><img class="user-nav__link-img" src="./img/icons/user.svg"
-              alt="user icon"></a>
-          <a class="user-nav__link" href="#"><img class="user-nav__link-img" src="./img/icons/search.svg"
-              alt="search icon"></a>
-          <a class="user-nav__link" href="#"><img class="user-nav__link-img" src="./img/icons/heart.svg"
-              alt="heart icon">
-            <span class="user-nav__num">3</span>
-          </a>
-          <a class="user-nav__link" href="#"><img class="user-nav__link-img" src="./img/icons/cart.svg" alt="cart icon">
-            <span class="user-nav__num">7</span>
-          </a>
-        </div>
+        <a class="user-nav__link" href="#"><img class="user-nav__link-img" src="./img/icons/cart.svg" alt="cart icon">
+          <span class="user-nav__num">7</span>
+        </a>
       </div>
     </div>
-  </header>
+  </div>
+</header>
 
   <main class="main">
     <section class="top">
@@ -72,11 +74,23 @@
         </div>
       </div>
     </section>
+     
 
     <section class="shop">
+      <button class="shop__filter-btn">
+        <?xml version="1.0" encoding="UTF-8"?>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px"
+          viewBox="0 0 30 30" version="1.1">
+          <g>
+            <path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:0.7;"
+              d="M 11.25 23.4375 L 17.503906 29.691406 C 17.679688 29.863281 17.914062 29.960938 18.160156 29.960938 C 18.285156 29.964844 18.410156 29.9375 18.523438 29.886719 C 18.871094 29.742188 19.097656 29.402344 19.097656 29.023438 L 19.097656 12.261719 L 29.726562 1.601562 C 29.992188 1.332031 30.070312 0.929688 29.925781 0.582031 C 29.78125 0.230469 29.441406 0 29.0625 0 L 0.9375 0 C 0.558594 0 0.21875 0.230469 0.0742188 0.582031 C -0.0703125 0.929688 0.0078125 1.332031 0.273438 1.601562 L 10.941406 12.261719 L 10.941406 22.808594 C 10.957031 23.050781 11.070312 23.277344 11.25 23.4375 Z M 3.195312 1.875 L 26.804688 1.875 L 17.429688 11.25 C 17.25 11.425781 17.148438 11.664062 17.148438 11.914062 L 17.148438 26.804688 L 12.777344 22.425781 L 12.777344 11.878906 C 12.777344 11.628906 12.675781 11.386719 12.496094 11.210938 Z M 3.195312 1.875 " />
+          </g>
+        </svg>
+      </button>
       <div class="container">
         <div class="shop__inner">
-          <div class="shop__filters filter">
+          <div class="shop__filters filter ">
+
             <div class="filter__item filter-search">
               <h3 class="filter-search__title filter__title">
                 Search
@@ -88,6 +102,7 @@
                 </button>
               </form>
             </div>
+
             <div class="filter__item filter-price">
               <h3 class="filter__title">
                 PRICE FILTER
@@ -106,6 +121,7 @@
                 </label>
               </form>
             </div>
+
             <div class="filter__item filter-color">
               <h3 class="filter__title">
                 Color Filter
@@ -170,6 +186,7 @@
                 </label>
               </form>
             </div>
+
             <div class="filter__item filter-size">
               <h3 class="filter__title">
                 Size Filter
@@ -203,8 +220,8 @@
                   <span class="filter-size__text">XXL</span>
                 </label>
               </form>
-
             </div>
+
             <div class="filter__item filter-category">
               <h3 class="filter__title">
                 CATEGORY
@@ -248,10 +265,9 @@
                     <span>88</span>
                   </div>
                 </label>
-
-
               </form>
             </div>
+
             <div class="filter__item filter-popular">
               <h3 class="filter__title">
                 Popular Tags
@@ -289,7 +305,6 @@
                     Jewellery
                   </span>
                 </label>
-
               </form>
             </div>
           </div>
@@ -977,9 +992,6 @@
       </div>
       </div>
     </section>
-
-
-
 
   </main>
 

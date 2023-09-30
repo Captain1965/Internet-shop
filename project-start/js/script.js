@@ -24045,6 +24045,11 @@ return jQuery;
 
 
 $(function(){
+    $('.shop__filter-btn').on('click', function(){
+    $('.shop__filters').slideToggle();
+    $('.shop-content__inner').slideToggle();
+
+    })
 
     $('.footer-top__title--active').on('click', function(){
         

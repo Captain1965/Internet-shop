@@ -697,6 +697,11 @@
 }
 .shop {
   padding: 120px 0 105px;
+  &__btn-svg{
+  display: none;
+  background-color: #fff;
+  border: none;
+}
   &__inner {
     display: flex;
   }

@@ -661,20 +661,20 @@
   }
 }
 @media (max-width: 500px) {
-  #map{
+  #map {
     height: 300px;
   }
-  .map{
+  .map {
     padding: 10px 0;
   }
-  .contact{
+  .contact {
     padding-bottom: 60px;
-    &__info-text{
+    &__info-text {
       margin-bottom: 30px;
     }
   }
-  .contact{
-    &__form{
+  .contact {
+    &__form {
       padding: 30px 10px;
     }
   }
@@ -684,5 +684,102 @@
     &__info-item {
       padding-left: 70px;
     }
+  }
+}
+@media (min-width: 1250px) {
+  .shop {
+    &__filter-btn {
+      display: none;
+    }
+  }
+}
+@media (max-width: 1250px) {
+  .shop {
+    &__inner{
+      display: block;
+    }
+    &__filter-btn {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      padding-top: 12px;
+      padding-right: 7px;
+      cursor: pointer;
+      display: block;
+      background-color: $accent;
+      border: none;
+      z-index: 21;
+      right: 16px;
+    }
+    &__filters {      
+      display: none;
+      position: absolute;
+      left: 2px;
+      padding-right: 5px;  
+      padding-left: 5px;    
+      width: 100%;
+      z-index: 20;
+      background: #fff;      
+    }
+    &-content {
+      &__inner {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      &__filter-btn {
+        display: none;
+      }
+      &__filter {
+        justify-content: start;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+  .filter-search__input{
+    width: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  .shop {
+    &-content {
+      &__inner {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+  .shop-content__inner .product-item {
+    margin: 0 auto 40px;
+  }
+}
+@media (max-width: 600px) {
+  .shop {
+    padding: 60px 0;
+  }
+  .product-item {
+    &__img-box {
+      height: 255px;
+    }
+  }
+  .shop {
+    &-content {
+      &__inner {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .pagination__prev,
+  .pagination__next {
+    display: none;
   }
 }

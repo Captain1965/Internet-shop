@@ -3382,6 +3382,12 @@ footer {
   padding: 120px 0 105px;
 }
 
+.shop__btn-svg {
+  display: none;
+  background-color: #fff;
+  border: none;
+}
+
 .shop__inner {
   display: flex;
 }
@@ -4598,6 +4604,12 @@ footer {
   border: none;
 }
 
+@media (min-width: 1250px) {
+  .shop__filter-btn {
+    display: none;
+  }
+}
+
 @media (max-width: 1250px) {
   .header__inner {
     padding-right: 25px;
@@ -4663,6 +4675,59 @@ footer {
   }
 
   .contact .contact__form-input {
+    width: 100%;
+  }
+
+  .shop__inner {
+    display: block;
+  }
+
+  .shop__filter-btn {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    padding-top: 12px;
+    padding-right: 7px;
+    cursor: pointer;
+    display: block;
+    background-color: #fe3e57;
+    border: none;
+    z-index: 21;
+    right: 16px;
+  }
+
+  .shop__filters {
+    display: none;
+    position: absolute;
+    left: 2px;
+    padding-right: 5px;
+    padding-left: 5px;
+    width: 100%;
+    z-index: 20;
+    background: #fff;
+  }
+
+  .shop-content__inner {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .shop-content__filter-btn {
+    display: none;
+  }
+
+  .shop-content__filter {
+    justify-content: start;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .shop-content__filter span {
+    display: none;
+  }
+
+  .filter-search__input {
     width: 100%;
   }
 }
@@ -4783,6 +4848,18 @@ footer {
 
   .blog__item img {
     width: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .shop-content__inner {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .shop-content__inner .product-item {
+    margin: 0 auto 40px;
   }
 }
 
@@ -5076,6 +5153,22 @@ footer {
   }
 }
 
+@media (max-width: 600px) {
+  .shop {
+    padding: 60px 0;
+  }
+
+  .product-item__img-box {
+    height: 255px;
+  }
+
+  .shop-content__inner {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 @media all and (max-width: 576px) {
   .fancybox-thumbs {
     width: 110px;
@@ -5132,6 +5225,11 @@ footer {
 
   .contact__form {
     padding: 30px 10px;
+  }
+
+  .pagination__prev,
+  .pagination__next {
+    display: none;
   }
 }
 
