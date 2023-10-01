@@ -48,8 +48,17 @@ $(function(){
   $('.product-slide__big').slick({
     arrows: false,
     asNavFor: '.product-slide__thumb',
-    draggable: false,
-    fade: true
+    // draggable: false,
+    fade: true,
+    responsive: [
+        {
+         breakpoint: 768,
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+        }
+    }
+    ]
   });
 
   $('.shop-content__filter-btn').on('click', function(){
