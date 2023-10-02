@@ -14,7 +14,11 @@ let path = {
     fonts: project_folder + "/fonts/",
   },
   src: {
-    html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
+    html: [
+      source_folder + "/*.html",
+      "!" + source_folder + "_*.html",
+      "!" + source_folder + "/modules/_*.html",
+    ],
     css: source_folder + "/scss/style.scss",
     js: source_folder + "/js/script.js",
     img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
@@ -59,11 +63,13 @@ function browserSync() {
 }
 
 function html() {
-  return src(path.src.html)
-    .pipe(fileinclude())
-    .pipe(webphtml())
-    .pipe(dest(path.build.html))
-    .pipe(browsersync.stream());
+  return (
+    src(path.src.html)
+      .pipe(fileinclude())
+      // .pipe(webphtml())
+      .pipe(dest(path.build.html))
+      .pipe(browsersync.stream())
+  );
 }
 
 function css() {
@@ -87,7 +93,11 @@ function css() {
 }
 
 function js() {
-  return src(path.src.js)
+  return src([
+    // './node_modules/jquery/dist/jquery.js',
+    // './node_modules/slick-carousel/slick/slick.js',
+    path.src.js
+  ])
     .pipe(fileinclude())
     .pipe(dest(path.build.js))
     .pipe(uglify())

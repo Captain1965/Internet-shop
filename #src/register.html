@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html')
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="logo" href="#">
+          <img class="logo__img" src="img/logo.svg" alt="logo">
+        </a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a class="menu__list-link menu__list-link--active" href="#">HOME</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">SHOP</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">PAGE</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">BLOG</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-nav">
+          <a class="user-nav__link" href="#"><img class="user-nav__link-img" src="./img/icons/user.svg"
+              alt="user icon"></a>
+          <a class="user-nav__link" href="#"><img class="user-nav__link-img" src="./img/icons/search.svg"
+              alt="search icon"></a>
+          <a class="user-nav__link" href="#"><img class="user-nav__link-img" src="./img/icons/heart.svg"
+              alt="heart icon">
+            <span class="user-nav__num">3</span>
+          </a>
+          <a class="user-nav__link" href="#"><img class="user-nav__link-img" src="./img/icons/cart.svg" alt="cart icon">
+            <span class="user-nav__num">7</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="top">
+      <div class="top__container" style="background-image: url('./img/top-bg.jpg')">
+        <h2 class="top-title title">
+          REGISTER
+        </h2>
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">
+                Home
+              </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">
+                Log in
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="modal">
+      <div class="container">
+        <div class="modal__links">
+          <a class="modal__link modal__link--active" href="#">
+            REGISTER
+          </a>
+          <a class="modal__link" href="#">
+            LOGIN
+          </a>
+        </div>
+        <form class="modal__form" action="#">
+          <label class="modal__label">
+            Username or email address*
+            <input class="modal__input" type="text" required>
+          </label>
+          <label class="modal__label">
+            Password*
+            <input class="modal__input" type="password" required>
+          </label>
+          <p class="modal__text">
+            A password will be sent to you email address.
+          </p>
+          <p class="modal__text">
+            Your personal data will be used to support your experience throughout this website, to manage access to your
+            account,
+            and for other purposes describe in our privacy policy.
+          </p>
+          <label class="modal__input">
+            <input type="checkbox">
+            Agree with Terms & Conditions
+          </label>
+          <button class="modal__btn" type="submit">REGISTER</button>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-top__item footer-top__contact">
+          <a class="logo footer-top__logo" href="#"><img class="logo__img" src="./img/logo.svg" alt="logo"></a>
+          <a class="footer-top__adress" href="#">
+            No. 342 - London Oxford Street,
+            012 United States
+          </a>
+          <a class="footer-top__email" href="mailto:Youremail@gmail.com">
+            Youremail@gmail.com
+          </a>
+          <a class="footer-top__phone" href="tel:+02838388393">
+            +0283 838 8393
+          </a>
+          <ul class="footer-top__social-list">
+            <li class="footer-top__social-item">
+              <a class="footer-top__social-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16"
+                  height="16" viewBox="0 0 16 16" version="1.1">
+                  <g>
+                    <path
+                      d="M 9.5 3 L 12 3 L 12 0 L 9.5 0 C 7.570312 0 6 1.570312 6 3.5 L 6 5 L 4 5 L 4 8 L 6 8 L 6 16 L 9 16 L 9 8 L 11.5 8 L 12 5 L 9 5 L 9 3.5 C 9 3.230469 9.230469 3 9.5 3 Z M 9.5 3 " />
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-top__social-item">
+              <a class="footer-top__social-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px"
+                  height="16px" viewBox="0 0 16 16" version="1.1">
+                  <g>
+                    <path
+                      d="M 16 3.039062 C 15.410156 3.300781 14.777344 3.476562 14.117188 3.554688 C 14.792969 3.148438 15.3125 2.503906 15.5625 1.738281 C 14.925781 2.113281 14.222656 2.386719 13.476562 2.535156 C 12.875 1.898438 12.023438 1.5 11.082031 1.5 C 9.269531 1.5 7.800781 2.96875 7.800781 4.78125 C 7.800781 5.035156 7.828125 5.285156 7.882812 5.527344 C 5.15625 5.390625 2.738281 4.085938 1.121094 2.097656 C 0.828125 2.597656 0.675781 3.167969 0.675781 3.746094 C 0.675781 4.886719 1.253906 5.890625 2.132812 6.476562 C 1.597656 6.460938 1.089844 6.3125 0.648438 6.070312 L 0.648438 6.109375 C 0.648438 7.699219 1.777344 9.027344 3.28125 9.328125 C 3.003906 9.402344 2.714844 9.445312 2.414062 9.445312 C 2.203125 9.445312 2 9.421875 1.796875 9.386719 C 2.214844 10.6875 3.425781 11.636719 4.859375 11.664062 C 3.734375 12.546875 2.324219 13.070312 0.78125 13.070312 C 0.515625 13.070312 0.257812 13.054688 0 13.023438 C 1.457031 13.957031 3.179688 14.5 5.03125 14.5 C 11.066406 14.5 14.371094 9.496094 14.371094 5.160156 C 14.371094 5.015625 14.367188 4.875 14.363281 4.734375 C 15.003906 4.277344 15.558594 3.699219 16 3.039062 Z M 16 3.039062 " />
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-top__social-item">
+              <a class="footer-top__social-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px"
+                  height="16px" viewBox="0 0 16 16" version="1.1">
+                  <g>
+                    <path
+                      d="M 5.714844 5.144531 L 8.875 5.144531 L 8.875 6.765625 L 8.921875 6.765625 C 9.363281 5.972656 10.4375 5.144531 12.042969 5.144531 C 15.382812 5.144531 16 7.21875 16 9.921875 L 16 15.429688 L 12.703125 15.429688 L 12.703125 10.546875 C 12.703125 9.386719 12.679688 7.886719 10.988281 7.886719 C 9.273438 7.886719 9.007812 9.152344 9.007812 10.464844 L 9.007812 15.429688 L 5.714844 15.429688 Z M 3.429688 2.285156 C 3.429688 3.230469 2.660156 4 1.714844 4 C 0.769531 4 0 3.230469 0 2.285156 C 0 1.339844 0.769531 0.570312 1.714844 0.570312 C 2.660156 0.570312 3.429688 1.339844 3.429688 2.285156 Z M 0 5.144531 L 3.429688 5.144531 L 3.429688 15.429688 L 0 15.429688 Z M 0 5.144531 " />
+                  </g>
+                </svg>
+
+              </a>
+            </li>
+            <li class="footer-top__social-item">
+              <a class="footer-top__social-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px"
+                  height="15px" viewBox="0 0 17 17" version="1.1">
+                  <g>
+                    <path
+                      d="M 8.667969 7.285156 L 8.667969 10.199219 L 13.488281 10.199219 C 13.292969 11.453125 12.03125 13.867188 8.667969 13.867188 C 5.765625 13.867188 3.398438 11.460938 3.398438 8.5 C 3.398438 5.539062 5.765625 3.136719 8.667969 3.136719 C 10.320312 3.136719 11.425781 3.839844 12.054688 4.445312 L 14.363281 2.222656 C 12.882812 0.835938 10.964844 0 8.667969 0 C 3.972656 0 0.167969 3.800781 0.167969 8.5 C 0.167969 13.199219 3.972656 17 8.667969 17 C 13.574219 17 16.832031 13.550781 16.832031 8.695312 C 16.832031 8.136719 16.769531 7.710938 16.699219 7.289062 Z M 8.667969 7.285156 " />
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-top__social-item">
+              <a class="footer-top__social-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px"
+                  height="16px" viewBox="0 0 12 15" version="1.1">
+                  <g>
+                    <path
+                      d="M 2.660156 15 C 3.511719 14.257812 4.101562 13.199219 4.386719 12.113281 C 4.5 11.6875 4.972656 9.9375 4.972656 9.9375 C 5.277344 10.507812 6.179688 10.988281 7.125 10.988281 C 9.960938 10.988281 12 8.453125 12 5.289062 C 12 2.257812 9.464844 -0.00390625 6.207031 -0.00390625 C 2.148438 -0.00390625 -0.00390625 2.652344 -0.00390625 5.539062 C -0.00390625 6.882812 0.730469 8.554688 1.902344 9.085938 C 2.078125 9.171875 2.175781 9.132812 2.214844 8.960938 C 2.242188 8.828125 2.40625 8.214844 2.480469 7.921875 C 2.503906 7.832031 2.492188 7.746094 2.414062 7.65625 C 2.027344 7.195312 1.714844 6.351562 1.714844 5.566406 C 1.714844 3.546875 3.28125 1.589844 5.957031 1.589844 C 8.265625 1.589844 9.878906 3.117188 9.878906 5.316406 C 9.878906 7.792969 8.597656 9.515625 6.925781 9.515625 C 6.003906 9.515625 5.308594 8.769531 5.535156 7.859375 C 5.804688 6.769531 6.316406 5.59375 6.316406 4.8125 C 6.316406 4.109375 5.933594 3.523438 5.125 3.523438 C 4.179688 3.523438 3.425781 4.472656 3.425781 5.75 C 3.425781 6.5625 3.703125 7.109375 3.703125 7.109375 C 3.703125 7.109375 2.769531 10.949219 2.597656 11.664062 C 2.410156 12.457031 2.484375 13.570312 2.566406 14.292969 L 2.648438 15.003906 Z M 2.660156 15 " />
+                  </g>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-top__item footer-top__nav">
+          <h6 class="footer-top__title">
+            Useful Links
+          </h6>
+          <ul class="footer-top__list">
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">
+                About Us
+              </a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">
+                Privacy Policy
+              </a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">
+                Terms & Conditions
+              </a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">
+                Contact Us
+              </a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">
+                Help & Support
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-top__item footer-top__nav">
+          <h6 class="footer-top__title">
+            My Account
+          </h6>
+          <ul class="footer-top__list">
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">
+                My Account
+              </a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">
+                My Cart
+              </a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">
+                My WIshlist
+              </a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">
+                Registration
+              </a>
+            </li>
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">
+                Check Out
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-top__item footer-top__item-form ">
+          <h6 class="footer-top__title">
+            Subscribe Our Newsletter
+          </h6>
+          <p class="footer-top__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna
+            aliqua. Quis ipsum suspendisse ultrices gravida.
+          </p>
+          <form action="" class="footer-top__form">
+            <input class="footer-top__form-input" type="email" placeholder="Your email address" required>
+            <button class="footer-top__form-btn" type="submit">Subscribe</button>
+
+          </form>
+        </div>
+
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-bottom__copy">
+          © 2019 CodeAstrology. All Rights Reserved.
+        </p>
+        <div class="footer-bottom__accept">
+          We accept
+          <img class="footer-bottom__img" src="img/icons/mastercard.svg" alt="mastercard">
+          <img class="footer-bottom__img" src="img/icons/visa.svg" alt="visa">
+          <img class="footer-bottom__img" src="img/icons/paypal.svg" alt="paypal">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
